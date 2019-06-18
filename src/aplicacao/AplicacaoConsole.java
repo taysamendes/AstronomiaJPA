@@ -23,7 +23,7 @@ public class AplicacaoConsole {
 		try {			
 
 			Satelite s;
-			s = Fachada.cadastrarSatelite("Lua", 1737.10, 27.32, 0001);
+			s = Fachada.cadastrarSatelite("Teste", 1737.10, 27.32, 0001);
 			
 		} catch (Exception e) {
 			System.out.println(e);

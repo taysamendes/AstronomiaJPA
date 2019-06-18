@@ -1,10 +1,59 @@
-[EL Fine]: server: 2019-06-17 22:30:02.911--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
-[EL Config]: metadata: 2019-06-17 22:30:03.068--ServerSession(1508646930)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Astronomo] is set to [FIELD].
-[EL Config]: metadata: 2019-06-17 22:30:03.096--ServerSession(1508646930)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field satelites] is being defaulted to: class modelo.Satelite.
-[EL Config]: metadata: 2019-06-17 22:30:03.099--ServerSession(1508646930)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Astronomo] is being defaulted to: Astronomo.
-[EL Config]: metadata: 2019-06-17 22:30:03.102--ServerSession(1508646930)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Astronomo] is being defaulted to: ASTRONOMO.
-[EL Config]: metadata: 2019-06-17 22:30:03.117--ServerSession(1508646930)--Thread(Thread[main,5,main])--The column name for element [nascimento] is being defaulted to: NASCIMENTO.
-[EL Config]: metadata: 2019-06-17 22:30:03.118--ServerSession(1508646930)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
-[EL Config]: metadata: 2019-06-17 22:30:03.118--ServerSession(1508646930)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
-[EL Config]: metadata: 2019-06-17 22:30:03.119--ServerSession(1508646930)--Thread(Thread[main,5,main])--The column name for element [nacionalidade] is being defaulted to: NACIONALIDADE.
-[EL Warning]: metadata: 2019-06-17 22:30:03.136--ServerSession(1508646930)--Thread(Thread[main,5,main])--Element [field satelites] within entity class [class modelo.Astronomo] uses a collection type [class java.util.ArrayList] when the JPA specification only supports java.util.Collection, java.util.Set, java.util.List, or java.util.Map.  This type is supported with eager loading; using lazy loading with this collection type requires additional configuration and an IndirectContainer implementation that extends [class java.util.ArrayList] or setting the mapping to use basic indirection and the type to be ValueholderInterface.
+[EL Fine]: server: 2019-06-18 15:28:20.372--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2019-06-18 15:28:20.543--ServerSession(30578394)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Planeta] is set to [FIELD].
+[EL Config]: metadata: 2019-06-18 15:28:20.569--ServerSession(30578394)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field satelites] is being defaulted to: class modelo.Satelite.
+[EL Config]: metadata: 2019-06-18 15:28:20.573--ServerSession(30578394)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Astronomo] is set to [FIELD].
+[EL Config]: metadata: 2019-06-18 15:28:20.573--ServerSession(30578394)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field satelites] is being defaulted to: class modelo.Satelite.
+[EL Config]: metadata: 2019-06-18 15:28:20.574--ServerSession(30578394)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Satelite] is set to [FIELD].
+[EL Config]: metadata: 2019-06-18 15:28:20.575--ServerSession(30578394)--Thread(Thread[main,5,main])--The element [field planeta] is being defaulted to a one to one mapping.
+[EL Config]: metadata: 2019-06-18 15:28:20.576--ServerSession(30578394)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field planeta] is being defaulted to: class modelo.Planeta.
+[EL Config]: metadata: 2019-06-18 15:28:20.577--ServerSession(30578394)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field astronomos] is being defaulted to: class modelo.Astronomo.
+[EL Config]: metadata: 2019-06-18 15:28:20.577--ServerSession(30578394)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Planeta] is being defaulted to: Planeta.
+[EL Config]: metadata: 2019-06-18 15:28:20.579--ServerSession(30578394)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Planeta] is being defaulted to: PLANETA.
+[EL Config]: metadata: 2019-06-18 15:28:20.595--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [massa] is being defaulted to: MASSA.
+[EL Config]: metadata: 2019-06-18 15:28:20.597--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [per_rotacao] is being defaulted to: PER_ROTACAO.
+[EL Config]: metadata: 2019-06-18 15:28:20.597--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [vel_orbital] is being defaulted to: VEL_ORBITAL.
+[EL Config]: metadata: 2019-06-18 15:28:20.598--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-06-18 15:28:20.598--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [gravidade] is being defaulted to: GRAVIDADE.
+[EL Config]: metadata: 2019-06-18 15:28:20.598--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.599--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [temperatura] is being defaulted to: TEMPERATURA.
+[EL Config]: metadata: 2019-06-18 15:28:20.599--ServerSession(30578394)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Astronomo] is being defaulted to: Astronomo.
+[EL Config]: metadata: 2019-06-18 15:28:20.599--ServerSession(30578394)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Astronomo] is being defaulted to: ASTRONOMO.
+[EL Config]: metadata: 2019-06-18 15:28:20.599--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [nascimento] is being defaulted to: NASCIMENTO.
+[EL Config]: metadata: 2019-06-18 15:28:20.6--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-06-18 15:28:20.601--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.601--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [nacionalidade] is being defaulted to: NACIONALIDADE.
+[EL Config]: metadata: 2019-06-18 15:28:20.602--ServerSession(30578394)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Satelite] is being defaulted to: Satelite.
+[EL Config]: metadata: 2019-06-18 15:28:20.602--ServerSession(30578394)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Satelite] is being defaulted to: SATELITE.
+[EL Config]: metadata: 2019-06-18 15:28:20.602--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [raio] is being defaulted to: RAIO.
+[EL Config]: metadata: 2019-06-18 15:28:20.603--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [per_orbital] is being defaulted to: PER_ORBITAL.
+[EL Config]: metadata: 2019-06-18 15:28:20.603--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [ano_descoberta] is being defaulted to: ANO_DESCOBERTA.
+[EL Config]: metadata: 2019-06-18 15:28:20.603--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [nome] is being defaulted to: NOME.
+[EL Config]: metadata: 2019-06-18 15:28:20.604--ServerSession(30578394)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Warning]: metadata: 2019-06-18 15:28:20.627--ServerSession(30578394)--Thread(Thread[main,5,main])--Element [field satelites] within entity class [class modelo.Astronomo] uses a collection type [class java.util.ArrayList] when the JPA specification only supports java.util.Collection, java.util.Set, java.util.List, or java.util.Map.  This type is supported with eager loading; using lazy loading with this collection type requires additional configuration and an IndirectContainer implementation that extends [class java.util.ArrayList] or setting the mapping to use basic indirection and the type to be ValueholderInterface.
+[EL Config]: metadata: 2019-06-18 15:28:20.628--ServerSession(30578394)--Thread(Thread[main,5,main])--The join table name for the many to many mapping [field satelites] is being defaulted to: ASTRONOMO_SATELITE.
+[EL Config]: metadata: 2019-06-18 15:28:20.629--ServerSession(30578394)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field satelites] is being defaulted to: ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.63--ServerSession(30578394)--Thread(Thread[main,5,main])--The source foreign key column name for the many to many mapping [satelites] is being defaulted to: astronomos_ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.63--ServerSession(30578394)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field satelites] is being defaulted to: ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.63--ServerSession(30578394)--Thread(Thread[main,5,main])--The target foreign key column name for the many to many mapping [satelites] is being defaulted to: satelites_ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.638--ServerSession(30578394)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field planeta] is being defaulted to: ID.
+[EL Config]: metadata: 2019-06-18 15:28:20.638--ServerSession(30578394)--Thread(Thread[main,5,main])--The foreign key column name for the mapping element [planeta] is being defaulted to: PLANETA_ID.
+[EL Info]: 2019-06-18 15:28:20.76--ServerSession(30578394)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.3.v20180807-4be1041
+[EL Fine]: connection: 2019-06-18 15:28:21.073--Thread(Thread[main,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+[EL Config]: connection: 2019-06-18 15:28:21.081--ServerSession(30578394)--Connection(735937428)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=>PostgreSQLPlatform
+	user name=> "postgres"
+	datasource URL=> "jdbc:postgresql://localhost:5432/agenda"
+))
+[EL Config]: connection: 2019-06-18 15:28:21.204--ServerSession(30578394)--Connection(1604247316)--Thread(Thread[main,5,main])--Connected: jdbc:postgresql://localhost:5432/agenda
+	User: postgres
+	Database: PostgreSQL  Version: 10.5
+	Driver: PostgreSQL Native Driver  Version: PostgreSQL 9.4 JDBC4.2 (build 1206)
+[EL Warning]: metadata: 2019-06-18 15:28:21.213--ServerSession(30578394)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [satelites] for the entity class [class modelo.Astronomo] since weaving was not enabled or did not occur.
+[EL Info]: connection: 2019-06-18 15:28:21.248--ServerSession(30578394)--Thread(Thread[main,5,main])--/file:/C:/Users/IFPB/Downloads/AstronomiaJPA-master/AstronomiaJPA-master/bin/_agenda-eclipselink login successful
+[EL Fine]: sql: 2019-06-18 15:28:21.543--ServerSession(30578394)--Connection(1604247316)--Thread(Thread[main,5,main])--SELECT ID, ANO_DESCOBERTA, NOME, PER_ORBITAL, RAIO, PLANETA_ID FROM SATELITE WHERE (NOME = ?)
+	bind => [Teste]
+[EL Fine]: sql: 2019-06-18 15:28:21.553--ServerSession(30578394)--Connection(1604247316)--Thread(Thread[main,5,main])--SELECT t1.ID, t1.NACIONALIDADE, t1.NASCIMENTO, t1.NOME FROM ASTRONOMO_SATELITE t0, ASTRONOMO t1 WHERE ((t0.satelites_ID = ?) AND (t1.ID = t0.astronomos_ID))
+	bind => [1]
+[EL Config]: connection: 2019-06-18 15:28:21.561--ServerSession(30578394)--Connection(1604247316)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-06-18 15:28:21.562--ServerSession(30578394)--Thread(Thread[main,5,main])--/file:/C:/Users/IFPB/Downloads/AstronomiaJPA-master/AstronomiaJPA-master/bin/_agenda-eclipselink logout successful
+[EL Config]: connection: 2019-06-18 15:28:21.562--ServerSession(30578394)--Connection(735937428)--Thread(Thread[main,5,main])--disconnect

@@ -14,7 +14,7 @@ public class DAOSatelite extends DAO<Satelite>{
 	public Satelite read(Object chave){
 		try{
 			String nome = (String) chave;
-			Query q = manager.createQuery("select s from Satelite s where s.nome= '" + nome +"'");
+			Query q = manager.createQuery("select s from Satelite s where s.nome = '" + nome +"'");
 			return (Satelite) q.getSingleResult();
 			
 		}catch(NoResultException e){
