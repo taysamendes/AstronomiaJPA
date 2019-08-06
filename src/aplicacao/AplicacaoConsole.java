@@ -10,25 +10,25 @@ public class AplicacaoConsole {
 
 	public AplicacaoConsole(){	
 		Fachada.inicializar();
-		cadastrar(); 			
+//		cadastrar(); 			
 		//atualizar();		
 //		apagar();			
-//		listar();			
+		listar();			
 //		consultar();
 		Fachada.finalizar();
 	}
 
 
-	public void cadastrar(){
-		try {			
-
-			Satelite s;
-			s = Fachada.cadastrarSatelite("Teste", 1737.10, 27.32, 0001);
-			
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
+//	public void cadastrar(){
+//		try {			
+//
+//			Satelite s;
+//			s = Fachada.cadastrarSatelite("Teste", 1737.10, 27.32, 0001);
+//			
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
+//	}
 
 	/************************/
 //	public void atualizar(){
@@ -50,14 +50,13 @@ public class AplicacaoConsole {
 //	}
 //
 //	/************************/
-//	public void listar(){
-//		try {
-//			System.out.println(Fachada.listarPessoas());
-//			System.out.println(Fachada.listarAlunos());
-//		} catch (Exception e) {
-//			System.out.println(e);
-//		}
-//	}
+	public void listar(){
+		try {
+			System.out.println(Fachada.listarSatelites());
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 
 
 

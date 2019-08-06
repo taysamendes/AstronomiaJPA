@@ -5,6 +5,8 @@
 package daojpa;
 
 
+import java.util.List;
+
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
@@ -27,24 +29,24 @@ public class DAOPlaneta extends DAO<Planeta>{
 	}
 	
 //  //pode-se sobrescrever o metodo readAll da classe DAO para ordenar o resultado 
-//	public List<Pessoa> readAll(){
-//		Query query = manager.createQuery("select p from Pessoa p order by p.id");
-//		return (List<Pessoa>) query.getResultList();
-//	}
+	public List<Planeta> readAll(){
+		Query query = manager.createQuery("select p from Planeta p order by p.id");
+		return (List<Planeta>) query.getResultList();
+	}
 
-//	@SuppressWarnings("unchecked")
-//	public List<Pessoa> consultarSexo (Sexo sex){		
-//		Query q = manager.createQuery("select p from Pessoa p where p.sexo= :n");
-//		q.setParameter("n",sex);
-//		return  q.getResultList();
-//
-//	}
-//
-//	@SuppressWarnings("unchecked")
-//	public  List<Pessoa>  consultarPessoas3Telefones() {
-//		Query q = manager.createQuery("select p from Pessoa p where SIZE(p.telefones)=3 ");
-//		return (List<Pessoa>) q.getResultList(); 
-//	}
+	@SuppressWarnings("unchecked")
+	public List<Pessoa> consultarSexo (Sexo sex){		
+		Query q = manager.createQuery("select p from Pessoa p where p.sexo= :n");
+		q.setParameter("n",sex);
+		return  q.getResultList();
+
+	}
+
+	@SuppressWarnings("unchecked")
+	public  List<Pessoa>  consultarPessoas3Telefones() {
+		Query q = manager.createQuery("select p from Pessoa p where SIZE(p.telefones)=3 ");
+		return (List<Pessoa>) q.getResultList(); 
+	}
 
 
 }
