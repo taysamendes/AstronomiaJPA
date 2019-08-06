@@ -87,7 +87,7 @@ public class Fachada {
 		List<Satelite> satelites = daosatelite.readAll();
 		String texto = "-----------listagem de Satelites---------\n";
 		for (Satelite s : satelites) {
-			texto += "\n" + s;
+			texto += s + "\n";
 		}
 		return texto;
 	}
@@ -244,58 +244,17 @@ public class Fachada {
 
 
 	/*--------- CONSULTAS ----------*/
-//	public static String consultarPlanetasPorParteNome(String nome) {
-//	    List<Planeta> result = daoplaneta.consultarPlanetasPorParteNome(nome);
-//	
-//	    String texto = "\nConsultar planetas por parte do nome:"+nome;
-//	    if (result.isEmpty())  
-//	        texto += "consulta vazia";
-//	    else
-//	        for(Planeta p: result)texto += "\n" + p;
-//	    return texto;
-//	}
-//	
-//	public static String descobertaMaisAntigaDoAstronomo(String nome) {
-//		String result = "";
-//		List<Satelite> sat = daosatelite.descobertaMaisAntigaDoAstronomo(nome);
-//		int maisvelho = 9999;
-//
-//		for(Satelite s : sat) {
-//			if(s.getAno_descoberta() < maisvelho)
-//				maisvelho = s.getAno_descoberta();
-//		}
-//			result += Integer.toString(maisvelho);
-//					
-//		return "A descoberta mais antiga do astronomo " + nome + " foi no ano de " + result + "\n";
-//	}
-//	
-//	//lista os planetas que tem satelites que foram descobertos pelo astronomo que foi passado como parametro
-//	public static String consultarPlanetaAstronomo(String nome){
-//		List<Planeta> p = daoplaneta.consultarPlanetaAstronomo(nome);
-//		String result = "";
-//		
-//		for(Planeta pla : p)
-//			result += pla.getNome()+"\n";
-//		return "Os planetas que possuem satelites que foram descobertos pelo astronomo "+nome+" sao:\n"+ result;
-//	}	
-//	
-//	public static String sateliteMaisAntigo(String nome) {
-//		List<Satelite> sat = daosatelite.sateliteMaisAntigo(nome);
-//		int maisvelho = 9999;
-//		Satelite satelitevelho = null;
-//		
-//		for(Satelite s : sat) {
-//			if(s.getAno_descoberta() < maisvelho) {
-//				maisvelho = s.getAno_descoberta();
-//				satelitevelho  = s;
-//			}
-//		}		
-//		
-//		return "O satelite mais antigo de "+ nome + " é " + satelitevelho.getNome() + " que foi descoberto em "
-//					+satelitevelho.getAno_descoberta()+" por "+satelitevelho.getAstronomos().get(0).getNome();	
-//		
-//	}
-	
+	public static String astronomoSatelite(String nome) throws Exception{
+		String texto="";
+		List<Satelite> result = daosatelite.astronomoSatelite(nome);
+		if(result.isEmpty())
+			throw new Exception("Astronomo nao encontrado");
+		for (Satelite s : result) {
+			texto += s + "\n";
+		}
+			return texto;
+	}
+
 }
 	
 

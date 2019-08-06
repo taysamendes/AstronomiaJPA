@@ -33,21 +33,7 @@ public class DAOPlaneta extends DAO<Planeta>{
 		Query query = manager.createQuery("select p from Planeta p order by p.id");
 		return (List<Planeta>) query.getResultList();
 	}
-
-	@SuppressWarnings("unchecked")
-	public List<Pessoa> consultarSexo (Sexo sex){		
-		Query q = manager.createQuery("select p from Pessoa p where p.sexo= :n");
-		q.setParameter("n",sex);
-		return  q.getResultList();
-
-	}
-
-	@SuppressWarnings("unchecked")
-	public  List<Pessoa>  consultarPessoas3Telefones() {
-		Query q = manager.createQuery("select p from Pessoa p where SIZE(p.telefones)=3 ");
-		return (List<Pessoa>) q.getResultList(); 
-	}
-
-
+	
 }
+
 

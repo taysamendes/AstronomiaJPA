@@ -4,6 +4,8 @@
 
 package daojpa;
 
+import java.util.List;
+
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
@@ -21,5 +23,17 @@ public class DAOSatelite extends DAO<Satelite>{
 			return null;
 		}
 	}
+	
+	public List<Satelite> astronomoSatelite(String nome){
+		Query q = manager.createQuery("select s from Satelite s JOIN s.astronomos a where a.nome = '"+nome+ "'");
+		return (List<Satelite>) q.getResultList();
+	}
+
 }
 
+
+//Query q = manager.query();
+//q.constrain(Satelite.class);
+//q.descend("astronomos").descend("satelites").descend("planeta").descend("nome").constrain(nome);
+//List<Satelite> result = q.execute(); 
+//	return result;
